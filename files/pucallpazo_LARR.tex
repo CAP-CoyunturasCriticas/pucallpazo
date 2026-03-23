@@ -1,0 +1,866 @@
+%% ============================================================
+%% Pucallpazo — LARR submission
+%% Overleaf compatible: pdflatex + biblatex (chicago author-year)
+%% ============================================================
+\documentclass[12pt]{article}
+
+%% --- Encoding & fonts ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathptmx}          % Times New Roman equivalent
+
+%% --- Page layout ---
+\usepackage[
+  top=1in, bottom=1in,
+  left=1in, right=1in
+]{geometry}
+\usepackage{setspace}
+\doublespacing
+
+%% --- Paragraph style (LARR: first-line indent, no extra space) ---
+\setlength{\parindent}{0.5in}
+\setlength{\parskip}{0pt}
+
+%% --- Tables ---
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+
+%% --- Hyperlinks (Overleaf-friendly, no colored boxes) ---
+\usepackage[
+  hidelinks,
+  pdfauthor={Anonymous},
+  pdftitle={Subnational Critical Junctures from the Periphery}
+]{hyperref}
+
+%% --- Bibliography: biblatex with Chicago author-year ---
+\usepackage[
+  backend=biber,
+  style=chicago-authordate,
+  autocite=inline
+]{biblatex}
+\addbibresource{references_zotero.bib}   % <-- replace with your .bib filename
+
+%% --- Footnotes (LARR uses footnotes, not endnotes) ---
+\usepackage[bottom]{footmisc}
+
+%% --- Misc ---
+\usepackage{microtype}
+\usepackage{csquotes}
+
+%% ============================================================
+\begin{document}
+
+%% ---- Title block (double-blind: no author names) -----------
+\begin{center}
+  {\large\bfseries Subnational Critical Junctures from the Periphery:\\
+  The Pucallpazo and Territorial Reconfiguration in Peru (1978--1981)}
+\end{center}
+
+\vspace{1em}
+
+%% ---- Abstract ----------------------------------------------
+\noindent\textbf{Abstract}
+
+\noindent This article examines the Pucallpazo, a cycle of collective
+mobilization that took place in the Amazonian city of Pucallpa between
+1978 and 1981 and culminated in the creation of the Department of
+Ucayali, permanently altering the territorial organization of the
+Peruvian state. The case raises a broader question for the study of
+institutional change in Latin America: under what conditions can
+mobilization from a peripheral region generate durable transformations
+in state structure?
+
+Building on historical institutionalism, the article distinguishes
+between gradual institutional change and critical junctures and evaluates
+whether the creation of Ucayali resulted from incremental adaptation or
+from a discontinuous reconfiguration of territorial authority. Using
+process tracing based on archival sources, press reports, official
+documents, and oral histories, the analysis reconstructs the sequence
+linking long-term center--periphery tensions, a permissive national
+political context, and the self-organization of a heterogeneous local
+coalition.
+
+The findings show that the reform cannot be explained as gradual change.
+Instead, the Pucallpazo represents a subnational critical juncture in
+which sustained mobilization redefined territorial authority and generated
+effects across multiple institutional domains. In comparative perspective,
+the case differs from both elite-driven reforms and protest cycles that
+yield only temporary concessions. The article argues that critical
+junctures may originate outside national elites when structural tensions,
+political uncertainty, and coordinated collective action converge,
+highlighting the importance of peripheral conflicts for understanding
+democratization and state formation in Latin America.
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} critical junctures; subnational
+democratization; institutional change; Peru; bottom-up mobilization.
+
+\newpage
+
+%% ============================================================
+\section{Introduction}
+%% ============================================================
+
+In 1978, a cycle of collective mobilization known as the Pucallpazo
+erupted in the Amazonian city of Pucallpa, then part of the Department
+of Loreto. What began as a local protest evolved into a sustained
+regional movement that, within three years, led to the legal creation
+of the Department of Ucayali and a reorganization of Peru's territorial
+state. This remains the only instance in Peruvian history in which a
+subnational mobilization succeeded in creating a new department. The
+case raises a broader question for the study of institutional change in
+Latin America: under what conditions can bottom-up mobilization from a
+peripheral region produce durable transformations in state structure?
+
+Research on institutional change has traditionally emphasized either
+elite negotiation or gradual adaptation. Historical institutionalism
+has shown that institutions often evolve incrementally through processes
+such as layering, drift, conversion, and displacement rather than through
+abrupt rupture \autocite{mahoney_explaining_2010,streeck_introduction_2005}. At the
+same time, the literature on critical junctures highlights moments of
+heightened contingency in which political choices produce long-lasting
+institutional effects \autocite{collier_shaping_1991,capoccia_study_2007}.
+These approaches have been highly influential in the study of regime
+change, democratization, and state formation in Latin America, where
+transitions are often analyzed as outcomes of elite bargaining under
+conditions of crisis \autocite{huntington_tercera_2002,odonnell_transitions_1986}.
+
+Parallel to this tradition, a growing body of work has emphasized the
+role of collective action and subnational politics in shaping
+institutional outcomes. Studies of contentious politics show that
+sustained mobilization can alter authority relations even in highly
+centralized states \autocite{tilly_social_2004,abers_inventing_2000}. Research on
+subnational regimes demonstrates that territorial conflicts frequently
+produce institutional innovations that cannot be explained solely by
+national-level dynamics \autocite{gibson_boundary_2005,giraudy_politics_2010}. Yet most of
+this literature focuses on policy change, participation, or regime
+variation, rather than on transformations in the territorial
+organization of the state itself.
+
+This article examines the Pucallpazo as a case of institutional change
+generated from the periphery. Between 1978 and 1981, a heterogeneous
+coalition of local actors---workers, merchants, professionals, regional
+authorities, and civic organizations---organized a series of strikes,
+demonstrations, and negotiations demanding administrative autonomy from
+Loreto. These events took place during the transition from military rule
+to civilian government, a period characterized by political uncertainty
+and reduced state capacity. The outcome was not merely the expansion of
+participation or the adoption of new policies, but the creation of a new
+territorial unit with its own administrative and political institutions.
+
+The argument developed here is that the creation of Ucayali cannot be
+adequately explained as gradual institutional change. Instead, the case
+represents a subnational critical juncture in which long-standing
+center--periphery tensions, a permissive national political context,
+and sustained collective mobilization converged to produce a durable
+redefinition of territorial authority. By reconstructing the sequence
+linking structural conditions, political contingency, and collective
+action, the article shows how institutional rupture can originate outside
+national elites and emerge from conflicts in peripheral regions.
+
+The analysis proceeds as follows. The next section develops the
+theoretical framework, distinguishing between gradual institutional
+change and critical junctures and specifying the conditions under which
+bottom-up mobilization can generate institutional rupture. The third
+section describes the research design and sources. Sections four through
+six reconstruct the historical background, the cycle of mobilization,
+and the institutional outcome. Section seven places the case in
+comparative perspective, and the conclusion discusses implications for
+the study of democratization, territorial politics, and institutional
+change in Latin America.
+
+%% ============================================================
+\section{Institutional Change, Critical Junctures, and\\
+Bottom-Up Democratization}
+%% ============================================================
+
+Institutional transformation can follow multiple paths. In some cases,
+institutions evolve gradually as actors reinterpret rules, adjust
+enforcement, and modify authority relations over time. In other cases,
+political change occurs through relatively short periods of heightened
+contingency in which alternative institutional arrangements become
+possible and choices made during these moments produce long-lasting
+consequences. Distinguishing between gradual change and discontinuous
+transformation has been a central concern of historical institutionalism
+and comparative politics
+\autocite{streeck_introduction_2005,mahoney_explaining_2010,capoccia_study_2007}.
+
+\subsection*{Gradual institutional change}
+
+Research on institutional change has shown that important transformations
+often occur without formal rupture. \textcite{streeck_introduction_2005} identify
+several mechanisms through which institutions evolve incrementally,
+including displacement, layering, drift, conversion, and exhaustion.
+These mechanisms allow existing institutional frameworks to adapt to new
+conditions while preserving formal continuity.
+\textcite{mahoney_explaining_2010} further demonstrate that institutional
+stability frequently coexists with gradual shifts in power relations, as
+actors reinterpret rules or exploit ambiguities to advance new objectives.
+
+These perspectives have been particularly influential in the study of
+Latin American political development, where many reforms have taken place
+through negotiated adjustment rather than abrupt breakdown. Democratization
+processes, for example, have often been described as the outcome of elite
+bargaining under conditions of uncertainty, rather than as the result of
+revolutionary rupture
+\autocite{huntington_tercera_2002,odonnell_transitions_1986}. From this view,
+institutional change is typically cumulative, path-dependent, and
+constrained by existing structures.
+
+\subsection*{Critical junctures and discontinuous change}
+
+Alongside gradualist accounts, another tradition emphasizes moments of
+discontinuity. The literature on critical junctures argues that
+institutional trajectories can be redirected during relatively brief
+periods in which structural constraints weaken and political actors face
+multiple viable alternatives
+\autocite{collier_shaping_1991,capoccia_study_2007}. Decisions made
+during such periods may produce long-term consequences that persist even
+after the conditions that enabled them disappear.
+
+Critical junctures are not defined solely by the magnitude of change,
+but by the combination of contingency, choice, and durability.
+\textcite{capoccia_study_2007} stress that a critical juncture requires
+the presence of plausible alternative outcomes and the possibility that
+different decisions could have led to different institutional paths.
+Similarly, \textcite{slater_informative_2010} argue that critical junctures
+involve the interaction of antecedent conditions, permissive conditions
+that open a window of opportunity, and productive conditions that
+determine which of the available alternatives is selected.
+
+This framework has been widely used to analyze regime change, state
+formation, and major policy reforms. However, most applications focus on
+national-level processes---such as transitions to democracy,
+constitutional redesign, or elite pacts---leaving less explored the
+possibility that critical junctures may originate in subnational arenas.
+
+\subsection*{Bottom-up mobilization and territorial conflict}
+
+A parallel line of research highlights the role of collective action and
+territorial conflict in shaping institutional outcomes. Studies of
+contentious politics show that sustained mobilization can alter authority
+relations even in highly centralized states
+\autocite{tilly_social_2004,abers_inventing_2000}. In such cases, institutional change
+does not result from elite design alone, but from pressure generated by
+organized actors outside the central government.
+
+Research on subnational politics further demonstrates that territorial
+dynamics can produce institutional variation that cannot be explained
+solely by national-level factors. \textcite{gibson_boundary_2005} shows that
+conflicts over territorial authority often shape the distribution of
+power within democratic regimes, while \textcite{giraudy_politics_2010} documents
+how subnational political structures may persist or change independently
+of national transitions. These findings suggest that institutional change
+may originate in peripheral regions where tensions between economic
+importance, demographic growth, and limited political representation
+become difficult to sustain within existing arrangements.
+
+Despite these insights, the literature has paid limited attention to
+cases in which bottom-up mobilization leads not only to policy change or
+participation, but to a redefinition of the territorial organization of
+the state. The creation of new administrative units, regions, or
+provinces represents a particularly demanding form of institutional
+change, because it alters formal authority relations and redistributes
+resources across levels of government.
+
+\subsection*{Analytical framework}
+
+This article integrates insights from historical institutionalism and
+the study of contentious politics to examine whether the creation of the
+Department of Ucayali resulted from gradual institutional adaptation or
+from a critical juncture generated from below. Following the literature
+on gradual change, the analysis first evaluates whether the outcome can
+be explained through mechanisms such as layering, conversion, or drift
+\autocite{streeck_introduction_2005,mahoney_explaining_2010}. If these mechanisms
+cannot account for the transformation, the analysis then assesses whether
+the sequence satisfies the criteria for a critical juncture, including
+the presence of antecedent tensions, a permissive political context, a
+productive mechanism linking mobilization to institutional change, and
+durable consequences
+\autocite{collier_shaping_1991,capoccia_study_2007,slater_informative_2010}.
+
+By applying this framework to the Pucallpazo, the article seeks to show
+that institutional rupture can originate in peripheral regions when
+long-term territorial tensions coincide with political uncertainty and
+sustained collective action. In such cases, bottom-up mobilization may
+not only influence policy, but also redefine the structure of the state
+itself.
+
+%% ============================================================
+\section{Research Design and Sources}
+%% ============================================================
+
+This article employs a qualitative single-case design to evaluate
+whether the Pucallpazo constitutes a subnational critical juncture.
+Single-case studies do not aim at statistical generalization, but they
+are particularly appropriate for theory testing, identification of causal
+mechanisms, and reconstruction of contingent historical sequences
+\autocite{george_case_2005,bennett_elman_2006}. These features make
+them well suited for distinguishing between gradual institutional change
+and discontinuous transformation, a distinction that lies at the center
+of the present analysis.
+
+Within historical institutionalism, process tracing has become a
+standard strategy for assessing causal claims in temporally ordered
+sequences \autocite{mahoney_historical_2009,capoccia_study_2007}. Rather than
+relying on correlations across cases, process tracing examines whether
+the empirical evidence is consistent with the theoretical mechanisms that
+a given explanation requires. This approach is particularly useful when
+the goal is to determine whether an institutional outcome resulted from
+incremental adaptation or from a critical juncture characterized by
+contingency and durable effects.
+
+\subsection*{Case selection}
+
+The Pucallpazo is selected as a theoretically relevant case for examining
+bottom-up institutional rupture in a highly centralized state. In the
+Peruvian context, the creation of the Department of Ucayali represents
+the only known instance in which sustained mobilization at the subnational
+level led to the formation of a new territorial unit. This makes the case
+especially suitable for evaluating whether collective action from the
+periphery can produce changes in the formal organization of the state.
+
+The case also presents conditions that are theoretically favorable for
+rupture: a long-standing center--periphery cleavage, repeated conflicts
+over administrative autonomy, and a period of political uncertainty
+associated with the transition from military rule to civilian government.
+Because these conditions make institutional change plausible, the case
+constitutes a demanding test for gradualist explanations. If the outcome
+cannot be fully accounted for by mechanisms of incremental adaptation,
+the hypothesis of a critical juncture gains credibility.
+
+\subsection*{Analytical strategy}
+
+The analysis follows a two-step diagnostic strategy derived from the
+literature on institutional change. The first step evaluates whether the
+creation of Ucayali can be explained through mechanisms of gradual
+transformation, such as layering, drift, conversion, or displacement
+\autocite{streeck_introduction_2005,mahoney_explaining_2010}. These mechanisms
+imply continuity in the basic institutional framework even when important
+adjustments occur.
+
+If gradual change cannot fully account for the observed transformation,
+the second step assesses whether the sequence satisfies the criteria for
+a critical juncture. Following \textcite{collier_shaping_1991} and
+\textcite{capoccia_study_2007}, a critical juncture requires a period
+of heightened contingency in which multiple outcomes are possible and the
+decisions made during that period have lasting consequences.
+\textcite{slater_informative_2010} further emphasize the importance of
+distinguishing between antecedent conditions, permissive conditions that
+open the window for change, and productive conditions that determine
+which outcome prevails.
+
+In addition, the analysis considers the magnitude and scope of
+institutional change. Transformations that qualify as critical junctures
+should be relatively swift, significant, and encompassing in their
+effects, altering the distribution of authority or the structure of
+political institutions rather than merely adjusting existing rules.
+
+\subsection*{Process tracing}
+
+To evaluate these criteria, the article applies within-case process
+tracing \autocite{george_case_2005}. The analysis examines the
+sequence linking long-term territorial tensions, the cycle of
+mobilization between 1978 and 1981, and the legal creation of the
+Department of Ucayali. Evidence is assessed using standard
+process-tracing tests, including necessary-condition tests and strong
+confirmatory tests, in order to determine whether the observed events
+are consistent with the causal mechanisms implied by each explanation
+\autocite{bennett_process_2010}.
+
+\subsection*{Sources}
+
+The empirical reconstruction draws on multiple types of sources in order
+to triangulate evidence and reduce the risk of retrospective bias. These
+include archival documents, official records, press coverage, audiovisual
+materials, and oral histories.
+
+Archival sources consist of national and regional government documents
+from the late 1970s and early 1980s, including decrees, congressional
+debates, and administrative correspondence related to the creation of
+the Department of Ucayali. Press coverage from newspapers published in
+Lima and in the Amazon region provides contemporaneous accounts of the
+mobilization and of the negotiations between local actors and the central
+government.
+
+The study also incorporates oral histories and interviews with
+participants, journalists, and local authorities. Following the
+methodological literature on oral history, testimonies are treated not
+only as sources of factual information but also as evidence of how actors
+interpreted events and justified their actions \autocite{thompson_voice_2000}.
+Whenever possible, these accounts are cross-checked against written
+records to ensure consistency.
+
+%% ============================================================
+\section{Center--Periphery Tensions in the Peruvian Amazon}
+%% ============================================================
+
+The Pucallpazo cannot be understood without considering the long-standing
+tensions between the Peruvian state and its Amazonian periphery.
+Throughout the twentieth century, the Amazon region occupied an ambiguous
+position within the national political economy. Despite its vast territory
+and strategic importance, the region remained weakly integrated into
+national administrative structures and was often governed through
+centralized arrangements that limited local autonomy. Historical accounts
+of the Peruvian Amazon repeatedly note the persistence of conflicts over
+territorial authority, resource control, and political representation
+\autocite{san_roman_perfiles_1994,dourojeanni_amazonia_1990}.
+
+During most of the republican period, administrative organization in the
+Amazon favored large territorial units governed from distant capitals.
+The Department of Loreto, for example, encompassed extensive areas with
+limited infrastructure and difficult communication with Lima. This
+administrative structure reinforced dependence on the central government
+and reduced the capacity of local actors to influence political decisions.
+Studies of regional history emphasize that demands for decentralization
+and administrative reorganization appeared repeatedly throughout the
+twentieth century, particularly in areas experiencing demographic growth
+and economic expansion \autocite{espinoza_soriano_loreto_2016}.
+
+Pucallpa emerged as one of the most dynamic urban centers in the Amazon
+during the mid-twentieth century. Its growth was associated with river
+trade, timber extraction, and later road connections linking the region
+to the central highlands. As the city expanded, local elites, workers'
+organizations, and civic associations increasingly questioned the
+concentration of political authority in Iquitos, the capital of Loreto.
+These tensions reflected a broader pattern in which economic development
+in peripheral regions was not accompanied by proportional political
+representation \autocite{vivanco_pimentel_gran_1997}.
+
+Demographic change intensified these pressures. Census data from the
+late twentieth century show rapid population growth in the Ucayali area
+compared to other parts of the Amazon, reinforcing the perception among
+local actors that the existing administrative structure no longer
+reflected social and economic realities
+\autocite{inei_censos_1981,inei_resultados_2018}. Local leaders argued that decisions
+affecting the region were taken by authorities who lacked direct
+knowledge of local conditions, and that administrative distance
+translated into unequal distribution of public resources.
+
+Conflicts over territorial authority were not unique to the Peruvian
+Amazon. Comparative research on state formation shows that peripheral
+regions often become sites of institutional tension when economic
+expansion, demographic change, and limited political representation
+coincide \autocite{boone_political_2003}. In such contexts, demands for new
+administrative units, regional autonomy, or decentralization may emerge
+as attempts to realign political institutions with changing social
+conditions.
+
+In Peru, these tensions became particularly visible during the final
+years of military rule. The government of General Francisco Morales
+Bermúdez (1975--1980) faced growing political opposition while attempting
+to manage economic crisis and prepare a transition to civilian government.
+This period of uncertainty weakened the capacity of the central state to
+control regional conflicts and opened space for local actors to press
+demands that had previously been contained.
+
+By the late 1970s, the relationship between Pucallpa and the authorities
+of Loreto had become increasingly conflictive. Local organizations accused
+the departmental government of neglect, unequal investment, and political
+marginalization. Previous petitions for administrative autonomy had
+produced limited concessions but no structural change. As a result,
+demands for the creation of a new department gradually replaced earlier
+requests for minor administrative reforms.
+
+These long-term tensions formed the background against which the
+Pucallpazo unfolded. They did not make institutional rupture inevitable,
+but they created the conditions under which mobilization could be
+interpreted as a struggle over territorial authority rather than as a
+temporary protest. When political uncertainty at the national level
+reduced the costs of confrontation, these accumulated grievances provided
+the basis for sustained collective action that would eventually challenge
+the existing administrative order.
+
+%% ============================================================
+\section{The Pucallpazo Cycle of Mobilization (1978--1981)}
+%% ============================================================
+
+The cycle of mobilization known as the Pucallpazo unfolded between 1978
+and 1981 and involved a sequence of strikes, demonstrations, negotiations,
+and political confrontations that culminated in the creation of the
+Department of Ucayali. Although the demand for administrative autonomy
+had precedents, the events of these years differed in scale, coordination,
+and political impact. What began as a local protest developed into a
+sustained regional movement capable of forcing institutional change.
+
+The first major mobilization occurred in 1978, when local organizations
+in Pucallpa called for a general strike demanding greater administrative
+autonomy and increased public investment. The protest brought together a
+heterogeneous coalition that included labor unions, merchants, transport
+workers, professionals, students, and civic associations. Testimonies
+from participants emphasize that the movement lacked a single centralized
+leadership and instead operated through coordination among multiple
+organizations, each with its own agenda but united by the demand for
+regional autonomy \autocite{thompson_voice_2000}.
+
+Local sources describe the mobilization as a response to what
+participants perceived as systematic neglect by the departmental
+authorities in Iquitos. According to regional accounts, public
+investment, administrative attention, and political representation were
+concentrated in the departmental capital, while rapidly growing areas
+such as Pucallpa received limited resources despite their economic
+importance \autocite{vivanco_pimentel_gran_1997}. These grievances had
+accumulated over decades, but the political context of the late 1970s
+allowed them to be expressed in more confrontational forms.
+
+The first Pucallpazo demonstrated the capacity of local actors to
+organize large-scale collective action, but it did not immediately
+produce institutional change. Instead, it initiated a cycle of
+mobilization in which protest, negotiation, and renewed conflict followed
+one another over several years. Oral testimonies and journalistic
+accounts indicate that the movement persisted because earlier concessions
+were perceived as insufficient or unreliable, reinforcing the belief that
+only the creation of a new department would guarantee political autonomy.
+
+The second phase of mobilization took place in the context of the
+transition from military rule to civilian government. As the regime of
+Morales Bermúdez prepared elections and reduced repression, regional
+actors perceived an opportunity to press demands that might have been
+suppressed under more stable conditions. Interviews with participants
+suggest that the expectation of political change at the national level
+encouraged local organizations to intensify their efforts, believing
+that the central government would be more responsive during a period of
+uncertainty.
+
+During this period, the demand for administrative reform became more
+clearly defined as a demand for the creation of the Department of
+Ucayali. Civic committees and regional leaders coordinated petitions,
+public demonstrations, and negotiations with national authorities.
+Archival documents and press reports indicate that the issue reached the
+national political agenda, forcing government officials to consider
+alternatives that had previously been rejected.
+
+In 1980, the return to civilian rule under President Fernando Belaúnde
+Terry created a new political context. The incoming government faced
+multiple regional demands and limited administrative capacity, which
+increased the incentives to resolve conflicts through institutional
+concessions rather than repression. According to contemporaneous accounts,
+local leaders in Pucallpa interpreted the transition as a window of
+opportunity and intensified mobilization in order to secure a definitive
+decision.
+
+The creation of the Department of Ucayali was formalized through legal
+measures adopted during this period, but the outcome remained uncertain
+for several years. Evidence from interviews and official records indicates
+that the reform was contested, delayed, and at times threatened with
+reversal. Even after the formal decision had been announced, local
+organizations continued to mobilize in order to ensure its
+implementation.
+
+Audiovisual material, regional chronicles, and interviews with
+participants consistently describe the process as one marked by
+uncertainty rather than inevitability. Actors involved in the movement
+recall that different outcomes were considered possible, including partial
+concessions, administrative reorganization without autonomy, or the
+cancellation of the reform. The persistence of mobilization played a
+decisive role in preventing these alternatives and in sustaining pressure
+on the central government until the new department was effectively
+established.
+
+%% ============================================================
+\section{From Mobilization to Institutional Change}
+%% ============================================================
+
+The central question of this article is whether the creation of the
+Department of Ucayali can be explained as gradual institutional change
+or whether it represents a critical juncture produced by bottom-up
+mobilization. To answer this question, the analysis evaluates the
+sequence described in the previous sections in light of the theoretical
+criteria discussed above. Following the literature on historical
+institutionalism, the first step is to assess whether mechanisms of
+incremental change are sufficient to account for the observed
+transformation. Only if gradual explanations prove insufficient does
+the hypothesis of a critical juncture become plausible
+\autocite{streeck_introduction_2005,mahoney_explaining_2010}.
+
+\subsection*{Ruling out gradual institutional change}
+
+Gradualist accounts would interpret the creation of Ucayali as the
+result of cumulative administrative adjustments within the existing
+territorial framework. Mechanisms such as layering or conversion could
+explain the addition of new administrative arrangements without altering
+the basic structure of the state. However, the evidence suggests that
+the transformation went beyond incremental adaptation.
+
+First, the demand for a separate department did not emerge as a technical
+administrative reform but as a political claim rooted in long-standing
+conflicts over representation and resource distribution. For decades,
+local actors had requested improvements within the existing departmental
+structure, yet these requests produced only limited concessions. The
+shift from demands for investment or administrative attention to the
+demand for a new department represented a qualitative change in the
+nature of the conflict.
+
+Second, the institutional outcome involved the creation of a new
+territorial unit with its own administrative authorities, budgetary
+allocation, and political representation. Such a change cannot easily
+be described as layering or conversion, since it altered the distribution
+of authority between the center and the region rather than merely
+modifying existing rules. In terms of the framework proposed by
+\textcite{streeck_introduction_2005}, the transformation exceeded the scope
+of gradual adjustment and instead redefined the institutional structure
+itself.
+
+Third, the timing of the reform suggests the importance of political
+contingency. The decisive phase of the mobilization coincided with the
+transition from military rule to civilian government, a period
+characterized by uncertainty and reduced state capacity. Similar regional
+demands had existed earlier, but they had not produced comparable results.
+This pattern is consistent with the argument that institutional change
+may depend not only on structural pressures but also on the presence of
+a permissive political context \autocite{collier_shaping_1991}.
+
+\subsection*{Antecedent tensions and permissive conditions}
+
+The literature on critical junctures emphasizes the importance of
+antecedent conditions that make multiple outcomes possible but do not
+determine which one will occur \autocite{slater_informative_2010}. In the
+present case, long-standing tensions between Pucallpa and the authorities
+of Loreto created a situation in which demands for administrative
+autonomy were both plausible and recurrent. Economic growth, demographic
+expansion, and limited political representation generated pressures that
+could be resolved through different institutional arrangements, including
+decentralization, administrative reform, or the creation of a new
+department.
+
+These antecedent tensions alone, however, did not produce institutional
+change. The decisive factor was the emergence of a permissive political
+context during the late 1970s. The transition from military rule weakened
+the capacity of the central government to impose decisions unilaterally
+and increased the incentives to negotiate with regional actors. Under
+these conditions, outcomes that had previously been unlikely became
+politically feasible.
+
+\subsection*{Productive mechanism: sustained mobilization}
+
+A critical juncture requires not only permissive conditions but also a
+productive mechanism linking contingency to institutional outcome
+\autocite{capoccia_study_2007}. In the case of the Pucallpazo, this
+mechanism was sustained collective mobilization at the subnational level.
+
+The movement that emerged in Pucallpa was not a single protest but a
+sequence of coordinated actions involving strikes, demonstrations,
+negotiations, and public campaigns. The persistence of mobilization over
+several years prevented the conflict from being resolved through
+temporary concessions. Instead, it forced national authorities to
+consider solutions that altered the territorial organization of the
+state.
+
+Importantly, the mobilization was decentralized and involved actors from
+different sectors, including labor unions, business associations, civic
+organizations, and local authorities. This broad coalition increased the
+political cost of ignoring regional demands and made repression more
+difficult during a period of national transition. The evidence suggests
+that without this sustained pressure, the creation of a new department
+would have remained unlikely.
+
+\subsection*{Magnitude and durability of institutional change}
+
+Another defining feature of critical junctures is the durability of
+their consequences. Decisions taken during a brief period of contingency
+must produce institutional effects that persist over time
+\autocite{capoccia_study_2007}. The creation of the Department of
+Ucayali meets this criterion.
+
+The reform did not merely change policy; it altered the formal
+territorial structure of the Peruvian state. The new department acquired
+its own administrative authorities, budget, and representation within
+national institutions. Once established, this arrangement proved durable
+despite political changes at the national level. Subsequent governments
+did not reverse the reform, and the new territorial structure became
+part of the normal administrative framework of the country.
+
+The scope of the transformation also distinguishes it from ordinary
+policy concessions. Rather than addressing a specific grievance, the
+reform redefined the relationship between the center and a peripheral
+region. In this sense, the change was significant, swift relative to
+previous decades of conflict, and encompassing in its institutional
+effects.
+
+\subsection*{Contingency and alternative outcomes}
+
+Finally, the analysis must consider whether alternative outcomes were
+realistically possible. A critical juncture implies that different
+decisions could have led to different institutional paths
+\autocite{capoccia_study_2007}. The historical record indicates that
+several alternatives existed during the mobilization, including partial
+concessions, administrative reforms without autonomy, or the postponement
+of any decision.
+
+Testimonies from participants and contemporaneous documents show that
+the outcome remained uncertain even after the transition to civilian
+rule. The central government faced competing pressures from different
+regions and political actors, and the creation of a new department was
+only one among several possible responses. The fact that this option was
+ultimately adopted reflects the interaction between political uncertainty
+and sustained regional mobilization rather than a predetermined
+institutional trajectory.
+
+\subsection*{A subnational critical juncture}
+
+Taken together, the evidence supports the interpretation of the
+Pucallpazo as a subnational critical juncture. Long-term center--periphery
+tensions created the conditions for conflict, the transition to civilian
+rule opened a window of opportunity, sustained mobilization acted as the
+productive mechanism, and the resulting institutional change produced
+durable effects on the territorial organization of the state.
+
+This finding suggests that critical junctures need not originate at the
+national level or be driven exclusively by elite negotiations. Under
+certain conditions, collective action in peripheral regions can generate
+institutional rupture and redefine authority relations within the state.
+
+%% ============================================================
+\section{Subnational Mobilization and Institutional Change\\
+in Comparative Perspective}
+%% ============================================================
+
+The interpretation of the Pucallpazo as a subnational critical juncture
+raises broader questions about the relationship between collective action,
+territorial conflict, and institutional change in Latin America. Much of
+the literature on democratization and institutional transformation in the
+region has focused on national-level processes, particularly elite
+negotiation, regime transitions, and constitutional reform
+\autocite{huntington_tercera_2002,bunce_rethinking_2003}. While these approaches have
+produced important insights, they often overlook the role of conflicts
+originating in peripheral regions.
+
+Research on contentious politics has shown that collective mobilization
+can generate institutional effects even in highly centralized states,
+particularly when protests are sustained and involve broad coalitions of
+actors \autocite{tilly_social_2004,abers_inventing_2000}. However, most studies of social
+movements emphasize policy change, participation, or the expansion of
+rights, rather than transformations in the territorial organization of
+the state.
+
+Studies of subnational politics suggest that territorial dynamics often
+shape institutional development in ways that cannot be understood solely
+from the national level. \textcite{gibson_boundary_2005} argues that conflicts
+over territorial authority are central to understanding the persistence
+of unequal political arrangements within democratic regimes. Similarly,
+\textcite{giraudy_politics_2010} shows that subnational political structures may
+evolve independently from national political change, producing variation
+in institutional outcomes across regions.
+
+In Latin America, regional conflicts have frequently accompanied periods
+of political transition or economic crisis, when central governments face
+reduced capacity to control local actors. Comparative research on
+institutional change suggests that these moments of uncertainty can create
+opportunities for actors outside the national political center to
+influence the direction of reform
+\autocite{boone_political_2003,silva_challenging_2009}.
+
+The Peruvian case illustrates this dynamic. During the late 1970s, the
+transition from military rule to civilian government weakened the ability
+of the central state to manage regional conflicts through routine
+administrative mechanisms. At the same time, rapid demographic and
+economic growth in the Amazon increased the salience of demands for
+autonomy.
+
+The Pucallpazo differs from more common trajectories in two respects.
+First, the mobilization produced a coalition that included multiple social
+sectors and maintained coordination over several years, increasing the
+political cost of ignoring regional demands. Second, the events occurred
+during a period of national uncertainty in which the central government
+faced incentives to negotiate rather than repress. The combination of
+these factors made possible an outcome that had previously appeared
+unlikely: the creation of a new department and the redefinition of
+territorial authority.
+
+This case therefore suggests that institutional rupture can emerge from
+the interaction between structural tensions, political contingency, and
+sustained collective action at the subnational level. Recognizing this
+possibility expands the scope of comparative research on democratization
+and state formation in Latin America, highlighting the importance of
+territorial conflicts as sources of institutional transformation.
+
+%% ============================================================
+\section{Conclusion}
+%% ============================================================
+
+This article has examined the Pucallpazo as an episode of institutional
+change generated from the periphery of the Peruvian state. By
+reconstructing the sequence that linked long-term center--periphery
+tensions, the cycle of mobilization between 1978 and 1981, and the
+creation of the Department of Ucayali, the analysis has argued that the
+outcome cannot be adequately explained as gradual institutional
+adaptation. Instead, the case is better understood as a subnational
+critical juncture in which a relatively short period of political
+uncertainty allowed collective actors to redefine the territorial
+organization of the state.
+
+The evidence shows that the reform did not result from the slow
+accumulation of incremental adjustments, nor from a reform designed
+entirely by national elites. For decades, regional demands had produced
+only limited concessions without altering the basic structure of
+authority. The creation of Ucayali occurred only when long-standing
+structural tensions coincided with a permissive political context during
+the transition from military to civilian rule, reducing the capacity of
+the central government to manage conflict through routine mechanisms.
+In this setting, decentralized mobilization transformed distributive
+grievances into a demand for territorial autonomy and sustained pressure
+long enough to make institutional reorganization a politically viable
+solution.
+
+The case contributes to the literature on institutional change by showing
+that critical junctures can emerge outside the arenas most commonly
+studied in historical institutionalism. Rather than resulting from
+national crises or elite negotiation, the transformation analyzed here
+originated in a peripheral region whose demographic growth and economic
+importance were not matched by political representation. When this
+imbalance became politically unsustainable, collective action did not
+simply force policy concessions but produced an institutional rupture
+that redefined authority relations between the center and the periphery.
+
+The findings also speak to debates on democratization in Latin America.
+The Pucallpazo illustrates a trajectory in which sustained mobilization
+at the subnational level altered the territorial organization of the
+state itself. This suggests that democratizing processes may unfold not
+only through regime change but also through conflicts over territorial
+authority, especially in highly centralized countries where regional
+demands cannot easily be absorbed within existing institutional
+arrangements.
+
+More broadly, the case highlights the importance of peripheral regions
+in the study of state formation and institutional change. Territorial
+structures that appear stable may remain contingent when demographic
+expansion, economic transformation, and limited political representation
+generate pressures that existing institutions cannot accommodate. Under
+such conditions, collective mobilization may produce outcomes that go
+beyond reform and lead to durable reconfiguration of state authority.
+
+Future research could examine whether similar subnational critical
+junctures have occurred in other regions of Latin America, and under
+what conditions regional mobilization succeeds in reshaping state
+structures rather than merely influencing policy. By showing how
+institutional rupture can originate from below, the Pucallpazo provides
+a useful point of departure for analyzing the relationship between
+territorial conflict, collective action, and democratic change in the
+region.
+
+%% ============================================================
+%% References
+%% ============================================================
+\newpage
+\printbibliography[title={References}]
+
+%% ============================================================
+%% Oral Sources (separate from bibliography per LARR style)
+%% ============================================================
+\subsection*{Oral Sources}
+
+\begin{description}
+  \item[Alfaro Venturo, Fernando.] 2022. Interview by [Author 3].
+    Phone, April 2022.
+  \item[Flores, Julio.] 2022. Interview by [Author 3].
+    Phone, October 18, 2022.
+  \item[Medina Ortiz, Eulogio.] 2022. Interview by [Author 3]. 2022.
+  \item[Vásquez Valera, Manuel.] 2022. Interview by [Author 3].
+    Phone, April 21, 2022.
+  \item[Villa, Humberto.] 2022. Interview by [Author 3].
+    Videoconference, October 15, 2022.
+\end{description}
+
+\end{document}
