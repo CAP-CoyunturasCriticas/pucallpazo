@@ -1,0 +1,416 @@
+\documentclass[12pt]{article}
+
+% --------------------------------------------------
+% Encoding and fonts
+% --------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+% --------------------------------------------------
+% Language
+% --------------------------------------------------
+\usepackage[english]{babel}
+
+% --------------------------------------------------
+% Page layout
+% --------------------------------------------------
+\usepackage{geometry}
+\geometry{
+  letterpaper,
+  margin=1in
+}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{indentfirst}
+
+% --------------------------------------------------
+% Math and symbols
+% --------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% --------------------------------------------------
+% Tables and figures
+% --------------------------------------------------
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+
+% --------------------------------------------------
+% Lists
+% --------------------------------------------------
+\usepackage{enumitem}
+
+% --------------------------------------------------
+% Quotes
+% --------------------------------------------------
+\usepackage{csquotes}
+
+% --------------------------------------------------
+% Bibliography
+% --------------------------------------------------
+\usepackage[
+  backend=biber,
+  style=apa,
+  natbib=true,
+  maxcitenames=2,
+  maxbibnames=99,
+  uniquelist=false
+]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+\addbibresource{CAP.bib}
+
+% --------------------------------------------------
+% Hyperlinks (must be last)
+% --------------------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=blue
+}
+
+% --------------------------------------------------
+% Section formatting
+% --------------------------------------------------
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\large\bfseries}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries}
+  {\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\itshape}
+  {\thesubsubsection}{1em}{}
+
+% --------------------------------------------------
+% Title
+% --------------------------------------------------
+\title{The Pucallpazos and the Creation of Ucayali: A Subnational Critical Juncture in Peru (1978--1981)}
+
+\author{\small
+  José Manuel Magallanes Reyes\textsuperscript{1,2}, 
+  Gabriela Rengifo\textsuperscript{1}, 
+  Sinecio López Jiménez\textsuperscript{1,2} \\
+  \textsuperscript{1}{\footnotesize Pontificia Universidad Católica del Perú} \\
+  \textsuperscript{2}{\footnotesize Universidad Nacional Mayor de San Marcos}
+}
+\date{}
+
+% --------------------------------------------------
+% Document
+% --------------------------------------------------
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+Can a peripheral city generate enough political pressure to create a new territorial unit within the state? This article examines the ``Pucallpazos,'' the mobilizations that unfolded in the Peruvian Amazon during Peru’s transition from military rule to electoral democracy between 1978 and 1981, culminating in the creation of the Department of Ucayali.
+
+Although several Amazonian cities experienced demographic growth, frontier urbanization, and uneven incorporation into the state during the twentieth century, these conditions rarely produced territorial reorganization.
+
+Using a critical juncture approach, we reconstruct how fragmented regional actors with distinct organizational agendas converged around a shared territorial project. Drawing on official decrees, audiovisual materials, and retrospective testimonies, we show how accumulated territorial grievances evolved into a center--periphery cleavage that progressively narrowed feasible political alternatives.
+
+The evidence suggests that the Pucallpazos constituted a subnational critical juncture characterized by territorial cleavage formation, heightened political contingency, contested post-juncture consolidation, and durable institutional legacies. At the same time, the evidence contradicts explanations centered on demographic inevitability, gradual administrative modernization, or top-down territorial planning.
+
+More broadly, this article shows how subnational actors far from the national political center may exploit moments of political contingency to reshape territorial organization from below, while also demonstrating that territorial consolidation can remain politically contested long after formal institutional change has occurred.
+
+\end{abstract}
+
+\noindent
+{\footnotesize
+\textbf{Keywords:} critical junctures; territorial politics; subnational mobilization; institutional change; decentralization; Peruvian Amazon; process tracing
+}
+\newpage
+
+\section{Introduction}
+
+Twentieth century Latin American politics, marked by authoritarian and military regimes, attracted the attention of prominent scholars of democratization, political transition, and institutional change, often from the perspective of national elites and central governments. This article moves in a different direction by focusing on how local actors and subnational mobilization reshape political and territorial institutions from below.
+
+Like many postcolonial states, Peru inherited a territorial organization that initially reflected the political and administrative priorities of the Spanish kingdom rather than the needs of local populations. From independence in 1821 to 1980, Peru expanded from four to twenty-four departments\footnote{Departments constitute the first-level administrative divisions of the Peruvian state, followed by provinces and districts. Districts may contain cities and populated centers.}. Yet among all these territorial reorganizations, the creation of the Department of Ucayali remains exceptional because it emerged largely from sustained regional mobilization rather than from centralized administrative reform.
+
+Territorial organization in republican Peru evolved unevenly, particularly in the Amazon, historically one of the regions most distant from the country's coastal political and administrative centers. Several Amazonian cities experienced rapid demographic growth, frontier urbanization, and uneven incorporation into the state during the twentieth century. Yet despite widespread administrative fragmentation and territorial marginality, only Pucallpa, a city in the District of Callería in the Province of Coronel Portillo, then part of the Department of Loreto, succeeded in reshaping the territorial organization of the state itself.
+
+Between 1978 and 1981, Pucallpa became the center of a cycle of mobilizations known as the Pucallpazos. There, the Pucallpinos launched a regional protest movement that ultimately contributed to the creation of the Department of Ucayali, creating a separate departmental jurisdiction distinct from Loreto.
+
+This outcome raises the central question of the article: how did a peripheral Amazonian city manage to transform long-standing territorial grievances into durable institutional reorganization?
+
+To answer this question, the article interprets the Pucallpazos as a subnational critical juncture through which territorially concentrated mobilization reshaped the organization of the Peruvian state from below. Unlike gradual institutional evolution or centralized administrative reform, the process unfolded through a bounded sequence of political contingency, coalition convergence, contentious mobilization, and institutional conflict among actors whose organizational agendas were not necessarily unified in advance.
+
+Methodologically, the article relies on a critical juncture approach to analyze how long-term regional transformations interacted with a broader moment of weakened central political control during Peru's democratic transition \parencite{capoccia_study_2007,collier_critical_2022}. The empirical reconstruction draws on archival documents, press coverage, official decrees, audiovisual material, and retrospective testimonies to evaluate whether departmentalization resulted from contingent political interaction rather than from structural inevitability alone.
+
+In the following sections we proceed as follows. Section 2 develops the theoretical framework and situates the argument within the literature on territorial institutional change and critical junctures. Section 3 presents the research design, diagnostic criteria, and source protocol. Section 4 reconstructs the empirical sequence linking long-term regional transformation, political contingency, mobilization, and territorial institutional reorganization through analysis of antecedent conditions, cleavage formation, critical juncture dynamics, contested aftermath, institutional legacies, and alternative explanations. The conclusion discusses broader implications for territorial politics and institutional change in Latin America.
+
+\section{Theoretical Framework: Territorial Rupture from Below}
+
+\subsection{Institutional Change and Territorial Transformation in Latin America}
+
+Earlier debates on Latin American politics focused primarily on regime-level dynamics and the role of national elites. Foundational work by \textcite{collier_new_1979} questioned deterministic interpretations of modernization theory and emphasized instead the interaction between structural conditions, political coalitions, and institutional choices. Subsequent research highlighted how political transitions are shaped by strategic interaction, elite divisions, uncertainty, and negotiated conflict \parencite{odonnell_transitions_1986}. In much of this literature, however, institutional transformation is understood mainly as a process unfolding near the center of political power.
+
+More recent scholarship has expanded attention toward subnational arenas. For instance, \textcite{abers_inventing_2000} examine institutional innovation promoted from positions of governmental authority, such as participatory budgeting in Porto Alegre. Other scholars emphasize contentious politics and bottom-up mobilization as drivers of institutional transformation \parencite{silva_challenging_2009,somma_renovando_2022}. Additional research traces hybrid trajectories combining grassroots mobilization with subsequent state consolidation, as in Bolivia’s plurinational transition \parencite{postero_indigenous_2017,leyva_solano_indigenismo_2005}. Subnational politics, however, should not be treated as synonymous with democratization. \textcite{gibson_boundary_2005} and \textcite{giraudy_politics_2010}, for example, show how territorial dynamics may also reproduce local authoritarian enclaves.
+
+Existing studies of decentralization often emphasize negotiated intergovernmental reform, fiscal bargaining, or administrative devolution \parencite{falleti_decentralization_2010}, while contentious politics approaches primarily explain the emergence and dynamics of protest \parencite{mcadam_dynamics_2001}. Less attention has been devoted to evaluating how territorially concentrated mobilization may contribute to durable territorial institutional transformation during periods of broader political contingency.
+
+This article contributes to these debates by evaluating whether the Pucallpazos can be understood as a subnational critical juncture that reshaped Peru’s territorial organization during the transition from military rule to electoral democracy.
+
+\subsection{Critical Junctures and Territorial Institutional Change}
+
+Critical juncture approaches analyze relatively short periods of heightened political contingency during which institutional alternatives become unusually open and political choices generate durable consequences \parencite{capoccia_study_2007,collier_critical_2022}. Unlike gradual institutional transformation, which unfolds through cumulative processes such as layering, drift, conversion, or displacement \parencite{streeck_introduction_2005}, critical junctures involve temporally concentrated sequences in which existing arrangements temporarily lose their capacity to stabilize expectations and contain conflict.
+
+Two analytical distinctions help situate the present case within the broader literature on institutional change. The first concerns the temporal logic of transformation. Institutional change may unfold gradually through cumulative adjustment over extended periods of time, or rupturally through relatively concentrated episodes of political conflict and uncertainty. Critical juncture approaches are particularly useful for analyzing the latter because they focus on how moments of heightened contingency may redirect institutional trajectories and generate durable legacies.
+
+The second distinction concerns the direction of institutional change. Following discussions in the policy implementation literature \parencite{sabatier_top-down_1986}, institutional transformation may be understood as proceeding primarily from top-down processes initiated by central authorities or from bottom-up processes driven by local actors and territorially embedded mobilization. Many classic studies of critical junctures focus primarily on transformations initiated by national elites, including regime transitions, state-building processes, and macro-institutional restructuring. Yet institutional change may also emerge from subnational actors operating far from the political center. In this sense, critical juncture dynamics are not inherently top-down. They may also involve territorially concentrated mobilization from below capable of reshaping institutional arrangements during periods of broader political contingency.
+
+The Pucallpazos are analytically relevant because they combine both dimensions. The creation of the Department of Ucayali did not emerge through gradual administrative adjustment or incremental decentralization, but through a concentrated sequence of political conflict, coalition convergence, contentious mobilization, negotiation, and institutional reorganization during Peru’s democratic transition. At the same time, the process was driven not primarily by national elites but by regional actors seeking to transform territorial arrangements perceived as politically exclusionary.
+
+This article therefore evaluates whether the Pucallpazos fit the temporal and causal logic associated with critical junctures. More specifically, the analysis examines whether long-term territorial grievances interacted with the broader political contingency of Peru’s democratic transition to generate a bounded sequence of coalition convergence, contentious mobilization, institutional conflict, and territorial reorganization.
+
+The critical juncture framework is particularly useful in this case because it allows evaluation of contingency itself. Following \textcite{capoccia_study_2007}, the analysis examines whether the creation of the Department of Ucayali resulted from contingent political interaction throughout the mobilization sequence or whether the outcome instead reflected demographic inevitability, centralized planning, or gradual administrative modernization.
+
+Finally, the framework highlights the importance of coalition convergence under conditions shaped by collective action and coordination problems \parencite{moore_rational_1995}. In the Pucallpazo case, fragmented actors with distinct organizational agendas and political incentives temporarily converged around a shared territorial project. The analysis therefore explores how contentious interaction progressively narrowed feasible institutional alternatives and transformed departmentalization into a politically viable outcome.
+
+
+
+\subsection{Hypothesis}
+
+This article hypothesizes that the creation of the Department of Ucayali resulted from a bottom-up and ruptural critical juncture rather than from gradual top-down administrative reform or demographic inevitability. More specifically, we argue that the Pucallpazos constituted a bounded sequence of political contingency in which peripheral actors reshaped feasible institutional alternatives through coalition convergence, contentious mobilization, negotiation, and strategic confrontation.
+
+Following \textcite{collier_critical_2022} and \textcite{capoccia_study_2007}, the empirical analysis evaluates whether departmentalization resulted from contingent political interaction throughout the mobilization sequence or whether the outcome instead reflected processes structurally predetermined independently of regional political action.
+
+
+
+\section{Research Design: Critical Juncture Analysis}
+
+\subsection{Case Selection}
+
+The Pucallpazo constitutes an analytically relevant case because the creation of the Department of Ucayali emerged from a peripheral Amazonian region rather than from the national political center. Although many regions in republican Peru experienced uneven territorial incorporation, administrative fragmentation, and limited state presence, territorial reorganization did not automatically follow from these conditions.
+
+By the mid-twentieth century, Pucallpa did not appear substantially different from other peripheral Amazonian localities characterized by weak infrastructure, fragmented administrative authority, and dependence on distant political centers. Yet between 1978 and 1981, a regional protest movement evolved into a bounded sequence of political conflict that ultimately reshaped Peru’s territorial organization through the creation of a new department.
+
+The case therefore provides analytical leverage for examining how peripheral actors may transform accumulated territorial grievances into durable institutional reorganization under conditions of heightened political contingency. More specifically, the case allows evaluation of whether departmentalization resulted primarily from contingent political interaction or whether alternative explanations---including demographic inevitability, centralized planning, or gradual administrative reform---better account for the observed outcome.
+
+
+\subsection{Diagnostic Criteria and Observable Implications}
+
+The research design operationalizes these theoretical expectations through a sequential diagnostic strategy derived from the critical juncture tradition \parencite{collier_shaping_1991,capoccia_study_2007,collier_critical_2022}. Each stage corresponds to a set of observable implications that must be empirically evaluated:
+
+\begin{enumerate}[leftmargin=*, nosep]
+
+    \item \textbf{Antecedent conditions:} Evidence of urbanization, market expansion, civic organization, and territorial identity formation prior to 1978 that altered regional expectations and coordination capacities without yet producing institutional rupture.
+    
+    \item \textbf{Contingency opening:} Indicators that central authorities experienced declining capacity or willingness to maintain existing territorial arrangements, including elite fragmentation, policy paralysis, delayed responses, or reduced reliance on coercive containment.
+    
+    \item \textbf{Critical juncture sequence:} Documentation of strikes, negotiations, coalition formation, and political confrontations that progressively narrowed feasible alternatives and increased the viability of departmentalization. Particular attention is given to how fragmented regional actors with distinct organizational agendas converged around shared territorial demands, reducing collective action barriers and expanding regional coordination.
+    
+    \item \textbf{Institutional outcome:} Formal decrees, administrative restructuring, or jurisdictional changes that materially altered territorial organization.
+    
+    \item \textbf{Aftermath and legacy consolidation:} Evidence of post-juncture disputes, reactive mobilization, legal contestation, institutional adaptation, and mechanisms of reproduction indicating whether the new territorial arrangement stabilized or remained vulnerable to reversal.
+    
+    \item \textbf{Alternative explanations:} Evidence evaluating whether the observed outcome is better explained by contingent political interaction than by demographic inevitability, gradual administrative reform, or centralized territorial planning independent of the mobilization sequence.
+
+\end{enumerate}
+
+The alternative-explanations criterion is examined explicitly in Section \ref{counterfactual}, where demographic, administrative, and top-down interpretations are evaluated against the observed sequence of contingent political interaction. The central inferential question is whether institutional outcomes during this period remained reversible \textit{ex ante} but became progressively more difficult to reverse \textit{ex post} as political conflict, negotiation, and mobilization narrowed the range of feasible alternatives..
+
+
+\subsection{Limitations and Scope Conditions}
+
+The empirical reconstruction relies on triangulated qualitative evidence combined with an inductive, snowball-style research strategy. The investigation began by identifying surviving participants connected to the Pucallpazos, including actors associated with transport workers’ and teachers’ organizations. These initial interviews guided subsequent triangulation across documentary, journalistic, and retrospective sources, including works by \textcite{matos_tuesta_apuntes_2005}, \textcite{ortiz_forjadores_1962}, \textcite{rengifo_pucallpazos_2020}, and \textcite{vivanco_pimentel_gran_1997}. The research also incorporated digital archives and audiovisual materials, including recorded testimonial interviews and documentary footage such as \emph{Los Forjadores de Pucallpa} \parencite{tapuya_huaman_documental_2024} and the documentary series \emph{Diálogos Ucayalinos: Los Pucallpazos} \parencite{matos_tuesta_pucallpazos_2020,matos_tuesta_pucallpazos_2020-1,matos_tuesta_pucallpazos_2020-2}.
+
+The research process was affected by the onset of the COVID-19 pandemic during the interview-planning stage, complicating access to additional participants and requiring several interviews to be conducted remotely through phone or video communication. Archival reconstruction was further complicated by the partial disappearance and deterioration of regional newspaper collections in Pucallpa, including losses caused by fires and inadequate preservation conditions documented by regional historians \parencite{matos_tuesta_apuntes_2005}. Because many testimonies were collected decades after the original events, retrospective accounts were systematically cross-checked against contemporaneous press coverage, official decrees and legislative records, and independent participant narratives whenever possible.
+
+The study also adopts explicit scope boundaries. The analysis focuses primarily on the urban-subnational coalition dynamics that shaped departmentalization. Parallel indigenous territorial mobilizations and rural land conflicts, while critically important to Amazonian political development, followed distinct organizational trajectories and were only partially incorporated into the urban-led Frente de Defensa. The Pucallpazo should therefore be understood not as a comprehensive Amazonian mobilization, but as a territorially concentrated coalition process centered on demands for departmental autonomy.
+
+\section{The Pucallpazo and the Creation of Ucayali}
+
+\subsection{Antecedent Conditions}
+
+Many Peruvian Amazonian cities expanded through extraction cycles linked to rubber, timber, and oil, generating rapid demographic and commercial growth without equivalent political integration into the state \parencite{san_roman_perfiles_1994}. One such case was Pucallpa, originally a small settlement within the District of Callería that became the capital of Coronel Portillo Province in 1943 (Law 9815, July 2, 1943). In the same year, the opening of the Federico Basadre Highway connected Pucallpa to Aguaytía, Tingo María, and eventually the Peruvian coast, facilitating commercial exchange and stronger incorporation into national markets.
+
+The effects of this integration were substantial. Pucallpa’s population expanded from 2,368 inhabitants in 1940 \parencite{departamento_de_censos_censo_1941} to 26,391 by 1961 \parencite{direccion_nacional_de_estadistica_y_censos_v_1965}, reaching 57,993 in 1972 and 89,604 by 1981 \parencite{instituto_nacional_de_estadistica_e_informatica_migraciones_1995,inei_censos_1981}. By 1981, Coronel Portillo Province exceeded 163,000 inhabitants, while the territory that would later constitute the Department of Ucayali approached 200,000 \parencite{barrantes_amazonia_2014,maguina_salinas_esbozo_2016,iziga_nunez_desarrollo_1993}. Table \ref{tab:population_growth} summarizes the accelerated demographic trajectory of the city during these decades.
+
+\begin{table}[H]
+\centering
+\caption{Population Growth in Pucallpa, 1940--1981}
+\label{tab:population_growth}
+
+\begin{minipage}{0.55\textwidth}
+\centering
+
+\begin{tabular}{@{}lrr@{}}
+\toprule
+\textbf{Year} & \textbf{Population} & \textbf{Growth Rate (\%)} \\
+\midrule
+1940 & 2,368  & -- \\
+1961 & 26,391 & 12.2 \\
+1972 & 57,993 & 7.4 \\
+1981 & 89,604 & 5.0 \\
+\bottomrule
+\end{tabular}
+
+\vspace{0.2cm}
+
+\raggedright
+\footnotesize
+Source: \textcite{instituto_nacional_de_estadistica_e_informatica_migraciones_1995}.
+
+\end{minipage}
+
+\end{table}
+
+As \textcite{vivanco_pimentel_gran_1997} documents, demographic growth was accompanied by the expansion of hospitals, schools, airports, religious institutions, cooperatives, industrial activities, and banking services. Yet political and administrative integration lagged behind urban expansion. Authority remained concentrated in Iquitos, judicial administration depended on Huánuco, and educational administration on Huancayo. Before 1980, most provincial mayors were appointed directly from Lima rather than selected through local electoral competition. Consequently, a rapidly expanding urban center remained politically dependent on institutions located outside the region.
+
+Fiscal inequalities reinforced these tensions. Despite concentrating nearly half of Loreto’s urban population by 1981, Pucallpa received a disproportionately small share of public investment. In that year, Maynas Province (Iquitos) received 43\% of Loreto’s public investment, while Coronel Portillo (Pucallpa) received only 11.7\% \parencite{vivanco_pimentel_gran_1997}. At the same time, Pucallpa developed an increasingly dense civic environment composed of transport unions, teachers’ organizations, banking workers, professional associations, commercial chambers, church networks, neighborhood groups, and local media. Although these actors did not initially converge around a unified political project, they gradually expanded the city’s organizational capacity and territorial coordination, creating the organizational infrastructure that later facilitated coordinated territorial mobilization.
+
+\subsection{From Grievance to Contingency}\label{cleavage}
+
+By the late 1960s, demands for improved political and administrative representation had already begun circulating through local media and civic discussion in Pucallpa \parencite{matos_tuesta_apuntes_2005}. Dispersed frustrations regarding infrastructure deficits, administrative dependence, and unequal public investment gradually evolved into a center--periphery cleavage structured around the perception that the region remained politically subordinated despite its growing demographic and economic importance. Demands for departmental autonomy combined material grievances with broader claims for political recognition and territorial self-government.
+
+During the early 1970s, however, these tensions remained embedded within a political order still capable of containing conflict. The military government responded to protests through selective repression. For instance, when teachers occupied the Regional Education Directorate in 1974, detaining architect Eduardo Orrego, numerous union members faced arrest on terrorism charges \parencite{matos_tuesta_apuntes_2005,rengifo_pucallpazos_2020}.
+
+By the mid-1970s, the government's strategy began to shift alongside broader national political changes. As the military regime experienced declining legitimacy amid economic deterioration, growing social unrest, and preparations for a transition back to electoral democracy, its reliance on coercive containment gradually weakened. Rather than relying primarily on sustained repression, authorities increasingly responded through selective concessions, delayed administrative responses, and repeated promises of infrastructure expansion that rarely altered the underlying distribution of political authority \parencite{vivanco_pimentel_gran_1997}. Regional actors progressively interpreted these changes as evidence that inherited territorial arrangements could now be challenged more directly \parencite{tapuya_huaman_documental_2024}.
+
+By the late 1970s, a center--periphery cleavage had clearly formed around territorial subordination. Yet the reopening of electoral competition created an inherently unstable political environment. Although many regional actors increasingly agreed that existing territorial arrangements disadvantaged Pucallpa and surrounding provinces, each organization still approached the territorial conflict through its own organizational and political agendas \parencite{gobierno_regional_de_ucayali_importantes_2016,tapuya_huaman_documental_2024}.
+
+Under these conditions, territorial mobilization depended on whether broader sectors of the population would perceive departmental autonomy as sufficiently urgent and credible to justify sustained participation despite material risks and organizational uncertainty. The possibility of convergence therefore remained contingent and unresolved.
+
+
+\subsection{Critical Juncture Sequence: From Fragmentation to Convergence}
+
+\subsubsection{The Paradox of Mobilization}
+
+Participant testimonies reveal that organizational fragmentation and mutual distrust remained substantial in the months preceding the October 1978 mobilizations. Rather than emerging from a preexisting unified coalition, territorial mobilization developed among organizations that maintained distinct agendas, ideological differences, and competing leadership claims.
+
+Fernando Alfaro Venturo, secretary of the banking workers’ union, described early attempts to coordinate regional organizations while emphasizing the absence of the transport workers’ union from initial meetings:
+
+\begin{quote}
+``Fuimos los primeros, el primer intento de unificación de varios gremios, y como verá, ahí no hay sindicato de choferes ni mucho menos.'' 
+\parencite[00:20:41--00:20:50]{tapuya_huaman_documental_2024}
+\end{quote}
+
+Other testimonies suggest that tensions extended beyond organizational separation into open ideological hostility. Participants associated with the transport workers’ union accused leftist organizers of promoting ``sectarismo'' and violence, referring to some leaders as ``rojos'' who ``buscan sangre'' \parencite[00:24:30--00:25:20]{tapuya_huaman_documental_2024}. Disputes also emerged regarding leadership legitimacy and organizational credibility, while sectoral priorities frequently diverged from territorial demands themselves. According to Alfaro, the transport workers’ union remained primarily concerned with issues such as tax exemptions for vehicles rather than departmental autonomy \parencite[00:27:55--00:28:20]{tapuya_huaman_documental_2024}.
+
+These testimonies establish an important baseline for interpreting the subsequent mobilization sequence. Coordination among regional actors was not inevitable, nor did territorial demands initially override organizational fragmentation, ideological distrust, or sectoral interests. The eventual convergence of these actors into a territorially coordinated movement therefore represented a contingent political development rather than the automatic expression of a preexisting regional unity.
+
+\subsubsection{From Fragmentation to Territorial Convergence}
+
+On August 31, 1978, regional organizations formed the Frente de Defensa de los Intereses de Coronel Portillo (FREDECOP), articulating demands for infrastructure, public services, labor protections, and departmental autonomy \parencite{vivanco_pimentel_gran_1997}. Yet coordination remained fragile, as anticipated in Section \ref{cleavage}.
+
+On September 5, 1978, FREDECOP issued its first official statement under the leadership of Jorge Rodríguez, Osler Panduro, and Ángel Saboya Cachique\footnote{Saboya Cachique was a Catholic priest who participated in the founding of FREDECOP \parencite{caro_primer_2017}.}, calling for a citizen assembly on September 8 \parencite{tapuya_huaman_documental_2024}. This marked the opening of public confrontation with the state.
+
+The decisive trigger came on September 20, when the transport workers' union unilaterally issued a 78-hour ultimatum to the government. As no response arrived, bus drivers initiated an indefinite strike on October 5. Transport workers later portrayed their strike as crucial for disseminating information and mobilizing residents across Pucallpa and neighboring districts \parencite{tapuya_huaman_documental_2024}. The strike rapidly precipitated broader organizational convergence.
+
+Between October 6 and 9, mobilization expanded dramatically. On October 8, representatives from thirty-three organizations established a plural leadership structure spanning unions, professional associations, and neighborhood organizations. The coalition agreed to delay the general strike for seventy-two hours in order to organize the population for a mobilization whose duration remained uncertain \parencite{vivanco_pimentel_gran_1997}. Organizations from Atalaya, Aguaytía, Campo Verde, and Yarinacocha also joined the movement, extending participation beyond Pucallpa's urban core.
+
+This convergence did not eliminate internal tensions. Transport union leaders reportedly vetoed the use of the bank workers' headquarters in order to avoid associating the movement too closely with a leftist political identity, leading meetings to be relocated to transport union facilities \parencite{tapuya_huaman_documental_2024}. Nevertheless, as one participant later recalled, ideological discrepancies persisted within FREDECOP even while coordination continued \parencite{rengifo_interview_2022}.
+
+The petition itself was deliberately expansive, incorporating demands ranging from neighborhood infrastructure and recreational facilities to university creation, labor protections, healthcare expansion, food prices, basic public services, and departmental autonomy. This breadth allowed virtually every organized sector to locate its interests within the movement's objectives.
+
+On October 12, the indefinite general strike formally began. The government opted primarily for dissuasion rather than direct repression. On October 15, the subprefect prohibited the distribution of FREDECOP communications, but the measure failed amid widespread local rejection. The following day, the commander of the Fifth Military Region arrived unexpectedly in Pucallpa, though authorities largely maintained an observational stance toward the mobilization \parencite{tapuya_huaman_documental_2024}.
+
+By October 21, after ten days of sustained strike activity, the government recognized that the mobilization was unlikely to dissolve spontaneously and entered negotiations. Three state ministers arrived in Pucallpa and, after approximately fifteen hours of discussion, accepted the principal demands of the petition. The government subsequently issued Supreme Decree No. 013-78-PCM, creating the Committee for the Development of Coronel Portillo (CODECOP) as an institutional mechanism intended to channel regional demands and oversee implementation commitments. Negotiations remained tense, however, as threats of judicial prosecution against Frente leaders in Iquitos pushed organizers to seek support from the Church, the Rotary Club, and the Chamber of Commerce \parencite{tapuya_huaman_documental_2024}.
+
+On October 22, a massive concentration filled the Plaza de Armas, and on October 23 the strike concluded without mass repression or large-scale detentions. The first Pucallpazo demonstrated an unexpected capacity for territorial coordination across organizational and ideological divisions. As one participant later recalled:
+
+\begin{quote}
+``... hasta ahora hay la historia de las damas del sindicato de choferes, las ollas comunes, las misas, las orquestas de las calles para poder no darle mucha tristeza al paro ¿no? Había gente que regalaba sus toretes, gente que regalaba sus plátanos que traían de las chacras.'' 
+\parencite{rengifo_interview_2022}
+\end{quote}
+
+Yet the outcome remained uncertain. Regional actors had received promises before, and it remained unclear whether the agreements reached in 1978 would produce durable territorial transformation or another cycle of unfulfilled commitments.
+ 
+\subsubsection{Second Pucallpazo and Departmentalization (1979--1980)}
+
+The agreements reached after the first Pucallpazo temporarily de-escalated conflict but did not eliminate uncertainty. Although the creation of CODECOP represented an important institutional concession, many regional actors increasingly viewed it as insufficient because it could formulate development projects without altering the underlying structure of territorial dependence. By late 1979, distrust toward the central government had deepened as several commitments remained partially implemented or continuously delayed despite President Morales Bermúdez’s visit to Pucallpa in November of that year.
+
+Under these conditions, regional actors progressively transformed contentious mobilization into a more structured institutional campaign. Three complementary strategies became visible. First, departmentalization demands were institutionalized through technical and legal drafting efforts. Mayor Héctor Arceo\footnote{Although both Héctor Arceo and his predecessor Carlos Prentice had been appointed during the military government, both were broadly sympathetic to the regional departmentalization movement.} organized an advisory commission composed of engineers, lawyers, journalists, and civic leaders to prepare a formal departmentalization proposal \parencite{tapuya_huaman_documental_2024}. Second, regional leaders expanded the conflict’s national visibility. On April 29, 1980, Arceo and the commission held a press conference at Lima’s Hotel Crillón, reframing the issue from a regional protest into a national territorial question \parencite{gobierno_regional_de_ucayali_importantes_2016}. Third, organizations renewed direct political pressure through a second indefinite strike initiated on June 9, 1980, under the leadership of engineer César Castro Vera \parencite{vivanco_pimentel_gran_1997}. Together, these actions transformed protest into a structured institutional campaign.
+
+Whereas the first Pucallpazo had forced governmental recognition of regional demands, the second progressively transformed this opening into an increasingly irreversible territorial decision. Yet the outcome still remained contingent. According to later testimonies from leaders associated with the teachers’ union, the departmentalization decree had already been prepared internally within the military government:
+
+\begin{quote}
+``...el Decreto Ley de Creación del Departamento de Ucayali ya se encontraba listo en el escritorio del Presidente de Facto.''
+\parencite{rengifo_interview_2022-1}
+\end{quote}
+
+Despite this, the decree was not immediately issued. Once the June mobilization 
+escalated, the military government conditioned departmentalization on the consent 
+of President-elect Fernando Belaúnde, who was scheduled to assume office on 
+July 28. Belaúnde expressed public support for the initiative on June 22 
+\parencite{tapuya_huaman_documental_2024}, removing a final political obstacle.
+
+On June 23, 1980, Decree Law No. 23099 formally creating the Department of 
+Ucayali was received in Pucallpa and publicly read by Mayor Arceo, after which 
+the strike ended immediately. Strategic disruption, institutional negotiation, 
+and elite bargaining had progressively narrowed the range of feasible 
+alternatives until departmentalization became politically locked in.
+
+The celebrations nevertheless revealed that coalition tensions had not fully disappeared. Several leaders associated with the first Pucallpazo later indicated that they had not been invited to the official celebrations following the decree’s announcement \parencite{matos_tuesta_pucallpazos_2020-1}. The creation of Ucayali therefore resolved the immediate territorial conflict while simultaneously opening a new phase of regional political consolidation and institutional adaptation.
+
+\subsection{Contested Aftermath and Institutional Reconfiguration (1981--1984)}
+
+The post-juncture period opened a new phase of institutional contestation centered on the territorial boundaries and political viability of the new department. The arena of conflict had fundamentally shifted. During the military regime, neither Loreto nor Pucallpa possessed effective electoral representation at the national level. Following the democratic transition in July 1980, however, Loreto regained congressional seats while the newly created Department of Ucayali remained unrepresented. This institutional asymmetry significantly altered the strategic terrain.
+
+Between 1981 and 1983, two consultations challenged the territorial settlement. In 1981, Contamana's mayor José Reyes Ruiz promoted a local consultation in Ucayali Province; approximately 63.7\% of participants supported reincorporation into Loreto. Loreto's congressional representatives leveraged this result to secure Decree Law No. 23331 (December 10, 1981), authorizing the provisional return of Ucayali Province to Loreto. Faced with this new institutional configuration, regional authorities in Pucallpa increasingly prioritized negotiation and consolidation over indefinite escalation. In June 1982, President Belaúnde promulgated Law No. 23416 creating the new provinces of Atalaya, Padre Abad, and Purús, which simultaneously strengthened the internal structure of the Department of Ucayali while reducing concerns about territorial concentration.
+
+Subsequently, Supreme Decree No. 032-83 authorized a second referendum coinciding with the 1983 municipal elections. This time the result favored Ucayali: 3,097 votes supported remaining within the new department, compared to 2,829 favoring return to Loreto. Nevertheless, Loreto's congressional representatives and allied local authorities mobilized to contest the outcome. Although the executive branch presented legislation to formalize the result, the Senate ultimately archived the proposal in 1984, leaving the legal process formally unresolved.
+
+Territorial consolidation therefore remained politically contested well after the formal critical juncture. Departmentalization did not eliminate conflict; instead, it shifted political struggle from bottom-up mobilization into institutional, legal, and intergovernmental arenas. Yet despite reversals, disputes, and parliamentary obstruction, no subsequent reorganization overturned the departmental structure established in 1980. The new territorial configuration gradually stabilized through continued mobilization, institutional adaptation, and the progressive normalization of Ucayali as a distinct political unit.
+
+
+\subsection{Legacies: Institutional Consolidation and Uneven Development}
+
+If the aftermath demonstrates that departmentalization remained politically contested, the subsequent trajectory shows that the new territorial arrangement nevertheless generated durable institutional consequences. The legacy of the Pucallpazos was not the full resolution of Amazonian marginalization, but the normalization of Ucayali as a distinct administrative, fiscal, and political unit within the Peruvian state.
+
+The first mechanism of reproduction was administrative and fiscal institutionalization. The creation of the Department of Ucayali enabled the establishment of new development institutions, most notably CORDEUCAYALI, created by Law No. 23339 on December 31, 1981. Through this apparatus, public investment expanded in areas such as health, education, road paving, and basic urban infrastructure. The redirection of fiscal resources toward Ucayali, including sobrecanon revenues, gave the new department material foundations that made reversal increasingly costly. Departmentalization therefore altered not only the symbolic map of the state, but also the channels through which investment and administrative authority reached the region.
+
+A second legacy was the embedding of the new department in everyday public services. Several demands articulated during the Pucallpazos later acquired institutional expression, including higher education and health infrastructure. The Universidad Nacional de Ucayali, initially created as the Universidad Nacional de Pucallpa in 1979 and later ratified and renamed during the early 1980s, became a central institution for regional training and professional formation. Similarly, the expansion of public health infrastructure responded to demands already present in the 1978 petition. These developments linked departmentalization to concrete improvements in regional institutional capacity, even though deficits in coverage, personnel, and infrastructure persisted.
+
+A third legacy was political-territorial normalization. During the 1980s, regional actors continued to pursue institutional consolidation beyond departmental status. Manuel Vásquez Valera’s 1983 initiative to form a commission for the creation of the Region of Ucayali, followed by later efforts through CORDEUCAYALI and the approval of Law No. 24945 in 1988, show that the mobilizational agenda did not disappear after the decree. It was gradually redirected into formal regional governance. Even the institutional disruption produced by the 1992 autogolpe suspended regional bodies without eliminating the department itself, indicating that Ucayali had become embedded within Peru’s administrative structure.
+
+These legacies remained uneven. Departmentalization expanded institutional capacity and public investment, but it did not eliminate developmental deficits or resolve all forms of territorial exclusion. Some projects associated with the mobilization cycle, such as the Pucallpa river port, achieved formal establishment but failed to generate sustained operation over time. The port’s later suspension and recurrent attempts at reactivation illustrate that not all consequences of the critical juncture acquired effective mechanisms of reproduction.
+
+The legacy of the Pucallpazos therefore lies in the durable normalization of Ucayali as a territorial unit, supported by fiscal resources, administrative institutions, service expansion, and regional political organization. At the same time, the case shows that enduring institutional legacies may coexist with incomplete development outcomes and unresolved territorial inequalities.
+
+\subsection{Contingency and Alternative Explanations}\label{counterfactual}
+
+A critical juncture interpretation requires demonstrating that the observed outcome was not historically inevitable. The creation and consolidation of the Department of Ucayali must therefore be distinguished from alternative explanations centered on demographic growth, gradual administrative modernization, or deliberate top-down territorial planning.
+
+A first alternative explanation would attribute departmentalization primarily to structural demographic expansion and economic growth in the central Amazon. Pucallpa indeed experienced accelerated urbanization after the construction of the Federico Basadre Highway, while commercial activity and civic organization expanded steadily throughout the mid-twentieth century. Yet similar processes of demographic growth, territorial marginality, and state neglect existed in other Amazonian localities without generating equivalent territorial rupture or departmental reorganization. Moreover, these structural transformations had been unfolding for decades, making it difficult to explain why departmentalization emerged specifically through a concentrated conflict sequence between 1978 and 1981 rather than earlier or through gradual administrative adjustment.
+
+
+A second alternative explanation would interpret departmentalization as the product of gradual administrative adaptation driven from the national center. However, the empirical sequence reconstructed here reveals repeated delays, reversals, negotiations, and reactive governmental responses inconsistent with orderly institutional planning. The creation of CODECOP after the first Pucallpazo, the renewed mobilizations of 1980 and 1981, the disputes surrounding Ucayali Province, and the prolonged congressional conflicts through 1984 all suggest that territorial reorganization remained politically contested rather than administratively settled.
+
+A third alternative explanation would treat departmentalization as a deliberate strategic decision imposed from above during Peru's democratic transition. Yet national decision-making appears fragmented and reactive rather than coordinated and directive. Governmental concessions repeatedly followed escalating regional pressure, economic disruption, and intergovernmental conflict. Even after the 1980 decree, the territorial arrangement remained reversible in practice, as demonstrated by plebiscites, congressional obstruction, and attempts to reincorporate Ucayali Province into Loreto. If departmentalization had reflected a fully consolidated central-state project, prolonged institutional uncertainty and repeated territorial disputes would be difficult to explain.
+
+The evidence instead supports an interpretation centered on contingent political interaction. Long-term antecedent conditions created the organizational and territorial foundations for mobilization, but the eventual outcome depended on coalition convergence under conditions of political uncertainty, the inability of central authorities to restore routine containment, and the gradual institutionalization of territorial demands through successive episodes of contention. The departmental structure that emerged from this process was neither fully predetermined nor immediately stabilized; rather, it became progressively consolidated through reactive sequences, institutional adaptation, and mechanisms of legacy reproduction extending well beyond the original rupture period.
+
+\section{Conclusion}
+
+This article has argued that the creation of the Department of Ucayali resulted from a process of bottom-up ruptural institutional change rather than from gradual administrative reform or demographic inevitability. During Peru's transition to democracy, fragmented regional actors transformed accumulated territorial grievances into a concentrated sequence of mobilization, negotiation, and institutional confrontation that ultimately reshaped the territorial organization of the state.
+
+Beyond the specific case, the analysis contributes to broader debates on territorial institutional change and critical juncture theory in at least three ways. First, it demonstrates that peripheral actors can actively reshape state territorial organization through sustained mobilization, challenging perspectives that treat territorial reorganization primarily as an elite-driven or centrally planned process. Second, it shows that critical junctures may emerge not only through national regime transformation, but also through subnational territorial conflicts capable of generating enduring institutional consequences. Third, the case illustrates how fragmented organizations with distinct agendas may overcome collective action problems through mechanisms of coalition convergence, expansive aggregation of demands, and socially embedded mobilization without requiring ideological unity.
+
+The case also reveals a paradox central to peripheral institutional change: durable territorial reorganization may coexist with incomplete developmental transformation. Departmentalization created Ucayali as a distinct administrative and fiscal unit, expanded public investment, and enabled the institutionalization of universities, hospitals, and regional governance structures. Yet important developmental inequalities persisted. Infrastructure gaps remained substantial, public service coverage continued uneven, and some projects associated with the mobilization cycle---most notably the river port---failed to develop durable mechanisms of reproduction. The critical juncture therefore transformed the region's institutional position within the Peruvian state without fully resolving the structural conditions that initially fueled mobilization.
+
+The aftermath and legacy of the Pucallpazos further suggest that institutional durability depends on more than formal legal recognition alone. Fiscal redistribution, administrative institutionalization, expansion of public services, regional political organization, and territorial identity formation progressively normalized Ucayali as a distinct political unit even though aspects of the legal process remained contested for years after the original rupture. The case thus demonstrates how reactive sequences and institutional adaptation may extend the consolidation process well beyond the formal moment of territorial reorganization itself.
+
+Future research might explore whether similar patterns of bottom-up territorial rupture emerged elsewhere in Latin America during periods of democratization and state restructuring. Comparative analysis could clarify the conditions under which peripheral mobilization produces durable institutional transformation rather than temporary symbolic concessions, as well as the factors shaping whether territorial reorganization translates into broader developmental improvement.
+
+More than four decades after its creation, the Department of Ucayali remains part of Peru's territorial structure. This persistence reflects the durable consequences of the Pucallpazos. Yet the distance between the institutional achievement and the developmental aspirations that animated the mobilization remains unresolved. That gap---between institutional durability and developmental incompleteness---may itself constitute the most enduring legacy of the critical juncture: a transformation of the possible, though not necessarily of the actual.
+
+\printbibliography
+
+\end{document}
